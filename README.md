@@ -1,6 +1,6 @@
 # This is a fork of Proton Mail client for Android showcasing Lobzik Gradle Plugin
 
-**For more info about lobzik tool, read the companion [article](https://dev.to/mishkun/carving-the-path-to-modularity-a-lobzik-tool-case-study-on-the-protonmail-android-app-37n7-temp-slug-9314019)**
+**For more info about lobzik tool, read the companion [article](https://dev.to/mishkun/carving-the-path-to-modularity-a-lobzik-tool-case-study-on-the-protonmail-android-app-mid)**
 Pregenerated report can be found at [report.html](report.html)
 
 ## License
