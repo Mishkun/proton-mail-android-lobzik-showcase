@@ -37,7 +37,27 @@ plugins {
     id("me.proton.kotlin") version "0.1" // Released: Oct 09, 2020
     id("me.proton.tests") version "0.1" // Released: Oct 09, 2020
     id("me.proton.core.gradle-plugins.detekt") version "1.1.2"
+    id("xyz.mishkun.lobzik") version "0.6.0"
     `sonarQube`
+}
+
+lobzik {
+    monolithModule.set(":app")
+    packagePrefix.set("ch.protonmail.android")
+    this.variantName.set("betaDebug")
+    ignoredClasses.addAll(
+        ".*UserManager$",
+        ".*Constants$",
+        ".*ProtonMailApiManager$",
+        ".*Util.*",
+        ".*ProtonMailApplication$",
+        ".*ResponseBody$",
+        "Base.*",
+        ".*Module",
+        "^Message$",
+        "^User$",
+        "^ProtonMailApi$"
+    )
 }
 
 allprojects {
